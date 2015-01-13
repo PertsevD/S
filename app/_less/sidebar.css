@@ -1,0 +1,216 @@
+/* --------- fonts --------- */
+/* --------- fonts --------- */
+@font-face {
+  font-family: 'elektra_light_probold';
+  src: url('../fonts/font-webfont.eot');
+  src: url('../fonts/font-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font-webfont.woff2') format('woff2'), url('../fonts/font-webfont.woff') format('woff'), url('../fonts/font-webfont.ttf') format('truetype'), url('../fonts/font-webfont.svg#elektra_light_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_medium_proitalic';
+  src: url('../fonts/elektra_medium_pro_italic-webfont.eot');
+  src: url('../fonts/elektra_medium_pro_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/elektra_medium_pro_italic-webfont.woff2') format('woff2'), url('../fonts/elektra_medium_pro_italic-webfont.woff') format('woff'), url('../fonts/elektra_medium_pro_italic-webfont.ttf') format('truetype'), url('../fonts/elektra_medium_pro_italic-webfont.svg#elektra_medium_proitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_light_proregular';
+  src: url('../fonts/elektra_light_pro-webfont.eot');
+  src: url('../fonts/elektra_light_pro-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/elektra_light_pro-webfont.woff2') format('woff2'), url('../fonts/elektra_light_pro-webfont.woff') format('woff'), url('../fonts/elektra_light_pro-webfont.ttf') format('truetype'), url('../fonts/elektra_light_pro-webfont.svg#elektra_light_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_medium_proregular';
+  src: url('../fonts/elektra_medium_pro-webfont.eot');
+  src: url('../fonts/elektra_medium_pro-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/elektra_medium_pro-webfont.woff2') format('woff2'), url('../fonts/elektra_medium_pro-webfont.woff') format('woff'), url('../fonts/elektra_medium_pro-webfont.ttf') format('truetype'), url('../fonts/elektra_medium_pro-webfont.svg#elektra_medium_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.electra {
+  font-family: 'elektra_medium_proregular';
+}
+.electra_bold {
+  font-family: 'elektra_light_probold';
+}
+.electra_light {
+  font-family: 'elektra_light_proregular';
+}
+.electra_italic {
+  font-family: 'elektra_medium_proitalic';
+}
+/* --------- colors --------- */
+/* --------- mixins --------- */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* --------- custom mixins --------- */
+/* --------- sidebar --------- */
+.page .container {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.page .container:before,
+.page .container:after {
+  content: "";
+  display: table;
+}
+.page .container:after {
+  clear: both;
+}
+.page__sidebar {
+  float: left;
+  width: 230px;
+}
+.logo {
+  display: block;
+  margin-bottom: 25px;
+}
+.logo__img {
+  max-width: 199px;
+  max-height: 57px;
+  display: block;
+}
+.logo__text {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.feedback {
+  background: #f4f6f9;
+  margin-bottom: 15px;
+}
+.feedback__inner {
+  padding: 14px 10px;
+}
+.feedback__row {
+  display: block;
+  margin-bottom: 11px;
+}
+.feedback__row-title {
+  display: inline-block;
+  vertical-align: top;
+  width: 75px;
+  font-size: 14px;
+  color: #5c7b98;
+  line-height: 16px;
+  padding-top: 5px;
+}
+.feedback__title {
+  font-size: 25px;
+  color: #5c7b98;
+  line-height: 27px;
+  font-family: 'elektra_light_probold';
+  margin-bottom: 18px;
+}
+.feedback__row-input {
+  padding: 5px;
+  width: 117px;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #dae1eb;
+  font-family: 'elektra_light_proregular';
+}
+.feedback__row-select--wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+.feedback__textarea {
+  padding: 5px;
+  width: 197px;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #dae1eb;
+  font-family: 'elektra_light_proregular';
+  height: 55px;
+  resize: none;
+  margin-bottom: 15px;
+}
+.feedback__form-submit {
+  background: #00b9fe;
+  padding: 0;
+  margin: 0;
+  width: 90px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  font-family: 'elektra_light_probold';
+  border: 0 none;
+  color: #fff;
+}
+.feedback__form-clear {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  background: #dae1eb;
+  text-align: center;
+  margin-left: 30px;
+  color: #fff;
+}
+/* --------- pictures --------- */
+.pictures {
+  margin-bottom: 23px;
+}
+.pictures__list {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+  margin-left: -10px;
+}
+.pictures__list:before,
+.pictures__list:after {
+  content: "";
+  display: table;
+}
+.pictures__list:after {
+  clear: both;
+}
+.pictures__item {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+/* --------- contacts --------- */
+.contacts {
+  background: #f4f6f9;
+}
+.contacts__inner {
+  padding: 11px 23px;
+  text-align: center;
+}
+.contacts__address {
+  background: url('../img/icons/mark.png') 0 0 no-repeat;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c7b98;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.contacts__phone {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../img/icons/phone.png") 0 0 no-repeat;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #5c7b98;
+  text-decoration: none;
+}

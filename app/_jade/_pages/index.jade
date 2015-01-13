@@ -1,0 +1,85 @@
+extends ../_layouts/layout
+block title
+| HomeWork 2
+block content
+    .page
+        .container
+            .page__sidebar
+                a(href="#").logo
+                    img(src="img/logo/header_logo.png").logo__img
+                    span.logo__text ЭпплShop
+                .feedback
+                    .feedback__inner
+                        .feedback__title Заказать звонок
+                        .feedback__form
+                            form(action="", method="post")
+                                label.feedback__row
+                                    .feedback__row-title Ваше имя
+                                    input(type="text", placeholder="Введите Имя").feedback__row-input
+                                label.feedback__row
+                                    .feedback__row-title Телефон
+                                    input(type="text", placeholder="+7(999)000-00-00").feedback__row-input.feedback__row-input_phone
+                                div.feedback__row.feedback__row_double
+                                    .feedback__row-title Дата звонка
+                                    .feedback__row-select--wrap
+                                        select.feedback__row-select
+                                            - for (var i = 1; i <= 24; i++)
+                                                option(value=i)= i
+                                        select.feedback__row-select
+                                            - for (var i = 1; i <= 60; i++)
+                                                option(value=i)= i
+                                textarea(placeholder="Комментарий").feedback__textarea
+                                .feedback__form-buttons
+                                    input(type="submit", value="Отправить").feedback__form-submit
+                                    a(href="#").feedback__form-clear Очистить
+                .pictures
+                    ul.pictures__list
+                        - for (var i = 0; i < 9; i++)
+                            li.pictures__item
+                                a(href="#").pictures__link
+                                    img(src="//lorempixel.com/70/70/nature/" + i).pictures__img
+                .contacts
+                    .contacts__inner
+                        .contacts__address г. Москва, ул. Новая 246, офис 214.
+                        a(href="tel.:+79213221232").contacts__phone +7(921) 322-12-32
+            .page__content
+                .slider
+                    ul.slider__list
+                        - for (var i = 0; i < 4; i++)
+                            li.slider__item
+                                img(src="//lorempixel.com/740/300/technics/" + i).slider__img
+                                .slider__description
+                                    .slider__description-inner
+                                        .slider__description-title
+                                            a(href="#") iMac за полцены
+                                        .slider__description-text Принеси свой старый Mac и получи скидку на новый!
+                each section in ["Популярные товары", "Товары со скидкой"]
+                    .products
+                        .page-title
+                            .page-title__text= section
+                            ul.products__list
+                                each title, indx in ['Apple Thunderbolt Display', 'iMac 27', 'iPhone 5s Gold']
+                                    li.products__item
+                                        a(href="#").products__item-inner
+                                            .products__title
+                                                .products__title-pic
+                                                    img(src="//lorempixel.com/82/90/technics/" + indx)
+                                                .products__title-text--wrap
+                                                    .product__title-text= title
+                                            .products__options
+                                                ul.products__options-list
+                                                    li.products__options-item
+                                                        .products__options-key Артикул
+                                                        .products__option-value 3234234234
+                                                    li.products__options-item
+                                                        .products__options-key Опция
+                                                        .products__option-value Включена
+                                                    li.products__options-item
+                                                        .products__options-key Цвет
+                                                        .products__option-value Серебристый
+                                                    li.products__options-item
+                                                        .products__options-key Размер
+                                                        .products__option-value 1280*1245*90
+                                                    li.products__options-item
+                                                        .products__options-key Вес
+                                                        .products__option-value 9кг

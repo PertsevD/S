@@ -1,0 +1,151 @@
+@import "mixins";
+
+/* --------- sidebar --------- */
+
+.page {
+	.container {
+		.clearfix;
+	}
+}
+
+.page__sidebar {
+	float: left;
+	width: 230px;
+}
+
+.logo {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.logo__img {
+	max-width: 199px;
+	max-height: 57px;
+	display: block;
+}
+
+.logo__text {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+.feedback {
+	background: #f4f6f9;
+	margin-bottom: 15px;
+}
+
+.feedback__inner {
+	padding: 14px 10px;
+}
+
+.feedback__row {
+	display: block;
+	margin-bottom: 11px;
+}
+
+.feedback__row-title {
+	.inlineblock;
+	width: 75px;
+	font-size: 14px;
+	color: #5c7b98;
+	line-height: 16px;
+	padding-top: 5px;
+}
+
+.feedback__title {
+	font-size: 25px;
+	color: #5c7b98;
+	line-height: 27px;
+	.electra_bold;
+	margin-bottom: 18px;
+}
+
+.feedback__row-input {
+	.input-text(129px);
+}
+
+.feedback__row-select--wrap {
+	.inlineblock;
+}
+
+.feedback__textarea {
+	.input-text(209px);
+	height: 55px;
+	resize: none;
+	margin-bottom: 15px;
+}
+
+.feedback__form-submit {
+	background: #00b9fe;
+	padding: 0;
+	margin: 0;
+	width: 90px;
+	height: 35px;
+	.inlineblock;
+	font-size: 15px;
+	.electra_bold;
+	border: 0 none;
+	color: #fff;
+}
+
+.feedback__form-clear {
+	.inlineblock;
+	text-decoration: none;
+	width: 90px;
+	height: 35px;
+	line-height: 35px;
+	background: #dae1eb;
+	text-align: center;
+	margin-left: 30px;
+	color: #fff;
+}
+
+/* --------- pictures --------- */
+
+.pictures {
+	margin-bottom: 23px;
+}
+
+.pictures__list {
+	.clearfix;
+	margin-left: -10px;
+}
+
+.pictures__item {
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 4px;
+}
+
+/* --------- contacts --------- */
+
+.contacts {
+	background: #f4f6f9;
+}
+
+.contacts__inner {
+	padding: 11px 23px;
+	text-align: center;
+}
+
+.contacts__address {
+	background: url('../img/icons/mark.png') 0 0 no-repeat;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #5c7b98;
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.contacts__phone {
+	.inlineblock;
+	background: url("../img/icons/phone.png") 0 0 no-repeat;
+	padding-left: 25px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #5c7b98;
+	text-decoration: none;
+}
+
